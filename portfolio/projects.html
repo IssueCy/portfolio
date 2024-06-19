@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | My Projects</title>
+    <link rel="icon" href="img/infocenter.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="index-container">
+      <img class="logo" src="img/logo.png" alt="logo"/>
+
+      <nav>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a id="work" href="projects.html">My Projects</a>
+        </div>
+        <button onclick="contactAlertTwo()">Contact</button>
+      </nav>
+
+      <div class="projects-container">
+        <h1>A quick overview over my current projects:</h1>
+
+        <!---ItemBattle--->
+        <div class="work-container">
+          <h2>ItemBattle</h2>
+          <label><img src="img/coding.png" alt="coding-icon">Language: Java</label>
+          <p>A Minecraft Plugin implementing a gamemode called "ItemBattle". <br> You try to collect as many items as possible in a given amount of time.</p>
+          <hr>
+          <div class="links-container">
+              <a href="https://github.com/IssueCy/itembattle">🡆 Sourcecode</a>
+              <a href="#">🡆 View content</a>
+          </div>
+        </div>
+                <!---Lobbysystem--->
+        <div class="work-container">
+          <h2>Lobbysystem</h2>
+          <label><img src="img/coding.png" alt="coding-icon">Language: Java</label>
+          <p>A simple Minecraft Lobbysystem for the version 1.20.4<br>Navigator, Playerhider, necessary listeners and Spawnset.</p>
+          <hr>
+          <div class="links-container">
+              <a href="https://github.com/IssueCy/lobbysystem">🡆 Sourcecode</a>
+              <a href="#">🡆 View content</a>
+          </div>
+        </div>
+        <!---CurrencycalculatorV1--->
+        <div class="work-container">
+          <h2>Currency calculator v1</h2>
+          <label><img src="img/coding.png" alt="coding-icon">Language: Python</label>
+          <p>A calculator converting currencies of your choice.<br>Running in CMD with no gui.</p>
+          <hr>
+          <div class="links-container">
+              <a href="https://github.com/IssueCy/currencycalculator">🡆 Sourcecode</a>
+              <a href="#">🡆 View content</a>
+          </div>
+        </div>
+        <!---CurrencycalculatorV2--->
+        <div class="work-container">
+          <h2>Currency calculator v2</h2>
+          <label><img src="img/coding.png" alt="coding-icon">Language: Python</label>
+          <p>A remake of Currency calculator v1. <br>This time running as a real desktop application. <br>GUI made with tkinter.</p>
+          <hr>
+          <div class="links-container">
+              <a href="https://github.com/IssueCy/currencycalculatorV2">🡆 Sourcecode</a>
+              <a href="#">🡆 View content</a>
+          </div>
+        </div>
+        <!---guessgame--->
+        <div class="work-container">
+          <h2>Guessing game</h2>
+          <label><img src="img/coding.png" alt="coding-icon">Language: Python</label>
+          <p>An extremely simple CMD application where your task is to guess the correct number. (exciting!)</p>
+          <hr>
+          <div class="links-container">
+              <a href="https://github.com/IssueCy/guessinggame">🡆 Sourcecode</a>
+              <a href="#">🡆 View content</a>
+          </div>
+        </div>
+                        <!---simtec--->
+        <div class="work-container">
+          <h2>SimtecApplications website</h2>
+          <label><img src="img/coding.png" alt="coding-icon">Language: HTML, CSS</label>
+          <p>A simple website for an imaginary company. <br>No mobile UI; Maybe coming soon...</p>
+          <hr>
+          <div class="links-container">
+              <a href="https://github.com/IssueCy/simtecapplications">🡆 Sourcecode</a>
+              <a href="https://simtecapplications.netlify.app">🡆 View content</a>
+          </div>
+        </div>
+
+      </div>
+    </div> 
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
