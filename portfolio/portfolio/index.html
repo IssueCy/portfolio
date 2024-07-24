@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Home</title>
+    <link rel="icon" href="img/infocenter.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="index-container">
+
+      <img class="logo" src="img/logo.png" alt="logo">
+
+    <nav>
+      <div class="nav-links">
+        <a id="home"" href="index.html">Home</a>
+        <a href="projects.html">My Projects</a>
+      </div>
+      <button onclick="contactAlert()">Contact</button>
+    </nav>
+
+        <div class="headline-container">
+            <h1 class="headline">Hello there!</h1>
+            <p>I' m a JavaScript developer and I write <label>good and clean</label> code. <br><br> I am mostly creating Web applications with Javascript, but I also create Minecraft Plugins with Java. <br>Currently, I' m learning 3D-animating with Blender. Feel free to look around this portfolio, maybe you' ll find an easteregg!</p>
+        </div>
+
+        <div class="socials-container">
+            <a href="https://discord.gg/2PuRnnG2pB"><img src="img/discord.svg" alt="discord-image"></a>
+            <label id="discordCopyLabel" style="font-weight: bold; cursor: pointer;">.merix_<img src="img/copy.png" alt="copy-icon"></label>
+
+            <a href="https://github.com/IssueCy">
+                <img class="github" src="img/github.svg" alt="github-image">
+            </a>
+        </div>
+    </div>
+
+    <div class="subheader">
+      <button onclick="imgAlert()">Image licens</button>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
