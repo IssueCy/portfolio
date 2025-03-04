@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merix | Portfolio</title>
+    <link rel="icon" href="#">
+
     <link rel="stylesheet" href="css/indexStyles.css">
+    <link rel="stylesheet" href="css/langSwitcherStyles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Cutive&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
-<div class="language_header">
-    <div class="language-picker language-picker--hide-label js-language-picker" data-trigger-class="li4-btn li4-btn--subtle js-tab-focus">
-        <form action="" class="language-picker__form">
-          <label for="language-picker-select">Select your language</label>
-      
-          <select name="language-picker-select" id="language-picker-select">
-            <option lang="en" value="deutsch">English</option>
-            <option lang="de" value="english" selected>Deutsch</option>
-            <option lang="ru" value="francais">Russian</option>
-          </select>
-        </form>
-      </div>
-</div>
 
+    <div class="hero-section">    
+        <div class="language_header">
+            <div class="language-switcher">
+                <button id="selected-language">
+                    <img src="assets/en.avif" alt="English"> English
+                </button>
+                <ul id="language-dropdown" class="hidden">
+                    <li data-lang="en"><img src="assets/en.avif" alt="English"> English</li>
+                    <li data-lang="de"><img src="assets/de.avif" alt="Deutsch"> Deutsch</li>
+                    <li data-lang="ru"><img src="assets/ru.png" alt="Русский"> Русский</li>
+                </ul>
+            </div>
+        </div>
+        <h1>Hello there!</h1>
+    </div>
+
+
+
+
+
+
+
+    <script src="langSwitcher.js"></script>
 </body>
 </html>

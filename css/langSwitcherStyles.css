@@ -1,0 +1,61 @@
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+button {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button img {
+    width: 20px;
+    height: 14px;
+    margin-right: 8px;
+}
+
+ul {
+    color: black;
+    border-radius: 8px;
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    display: none;
+    width: 100%;
+}
+
+ul li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li img {
+    width: 20px;
+    height: 14px;
+    margin-right: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
