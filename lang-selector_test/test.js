@@ -7,7 +7,7 @@ document.querySelectorAll("#language-dropdown li").forEach(item => {
         let selectedText = this.innerHTML;
         
         document.getElementById("selected-language").innerHTML = selectedText;
-        document.getElementById("language-dropdown").classList.remove("shown");n
+        document.getElementById("language-dropdown").classList.remove("shown");
         
         console.log("Selected language:", this.dataset.lang);
     });
