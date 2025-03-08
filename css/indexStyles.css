@@ -32,6 +32,11 @@ body {
     z-index: -1;
 }
 
+.head-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .language_header {
     display: flex;
     justify-content: flex-end;
@@ -45,8 +50,23 @@ body {
     align-items: center;
 }
 
-.top-section h1 {
+.headline {
     margin-bottom: 12px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    z-index: -1;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.top-section p {
+    margin: 12px;
 }
 
 .social-links-section {
@@ -105,4 +125,102 @@ body {
 
 .tech-illustration {
     width: 35%;
+}
+
+/* Techstack Section */
+.techstackSection {
+    margin: 12px;
+    text-align: center;
+}
+
+.techstackSection h1 label {
+    font-size: 3rem;
+    background: #ff9b18;
+    background: linear-gradient(to right, #ff9b18 0%, #ff2a2a 88%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.61);
+}
+
+.logos-slide {
+    animation: 15s slide infinite linear;
+    display: inline-block;
+}
+
+.logos-slide img {
+    height: 80px;
+    margin: 0 40px;
+}
+
+/*Contact section*/
+.contactSection {
+    background-color: #0f3460;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.contactSection h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#statusMessage {
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(112, 187, 0);
+}
+
+/* footer */
+
+.footer {
+    margin-top: 50px;
+    color: white;
+    background-color: #136bcfc0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+.attributions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
 }
