@@ -224,3 +224,60 @@ form button {
     align-items: center;
     margin-top: 32px;
 }
+
+/* Projects Section */
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-container {
+    margin-bottom: 32px;
+  }
+  
+  .work-container {
+    background-color: #2a3e5e;
+    border-radius: 8px;
+    width: 600px;
+    padding: 12px;
+    transition: 0.2s;
+    margin-top: 32px;
+  }
+  
+  .work-container:hover {
+    background-color: #9cacc7;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .work-container a {
+    color: #c6d2ee;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  .work-container:hover a {
+    color: black;
+  }
+  
+  .links-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .work-container h2 {
+    margin-bottom: 0;
+  }
+  
+  .work-container span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .work-container span img {
+    width: 30px;
+    margin-right: 6px;
+  }
