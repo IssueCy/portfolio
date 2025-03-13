@@ -2,6 +2,10 @@
     --font-color: #F9F9F9;
 }
 
+[lang="ru"] {
+    font-family: "Inter", sans-serif;
+}
+
 * {
     margin: 0;
     text-decoration: none;
@@ -205,7 +209,7 @@ form button {
 .footer {
     margin-top: 50px;
     color: white;
-    background-color: #136bcfc0;
+    background-color: #136bcffd;
 }
 
 .link {
@@ -233,51 +237,79 @@ form button {
     align-items: center;
 }
 
+.projects-section-top {
+    padding: 12px;
+}
+
 .projects-container {
     margin-bottom: 32px;
-  }
-  
-  .work-container {
+}
+
+.work-container {
     background-color: #2a3e5e;
     border-radius: 8px;
-    width: 600px;
     padding: 12px;
     transition: 0.2s;
-    margin-top: 32px;
-  }
-  
-  .work-container:hover {
+    margin: 32px;
+    max-width: 700px;
+}
+
+.work-container:hover {
     background-color: #9cacc7;
     color: black;
     cursor: pointer;
-  }
-  
-  .work-container a {
+    rotate: 2deg;
+}
+
+.work-container a {
     color: #c6d2ee;
     text-decoration: none;
     transition: 0.2s;
-  }
-  
-  .work-container:hover a {
+}
+
+.work-container:hover a {
     color: black;
-  }
-  
-  .links-container {
+}
+
+.links-container {
     display: flex;
     justify-content: space-evenly;
-  }
-  
-  .work-container h2 {
+}
+
+.work-container h2 {
     margin-bottom: 0;
-  }
-  
-  .work-container span {
+}
+
+.work-container span {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .work-container span img {
+}
+
+.work-container span img {
     width: 30px;
     margin-right: 6px;
-  }
+}
+
+/** BG */
+.background {
+    width: 100%;
+    height: 100%;
+    --s: 200px;
+    --c1: #0a0f1f;
+    /* Dunkles Blau */
+    --c2: #1c2a3a;
+    /* Blaugrau */
+    --c3: #142030;
+    /* Tiefes Marineblau */
+
+
+    background: repeating-conic-gradient(from 30deg,
+            #0000 0 120deg,
+            var(--c3) 0 180deg) calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+        repeating-conic-gradient(from 30deg,
+            var(--c1) 0 60deg,
+            var(--c2) 0 120deg,
+            var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s) * 0.577);
+}
