@@ -1,106 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Home</title>
-    <link rel="icon" href="assets/coding.png">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/indexStyles.css">
-    <link rel="stylesheet" href="css/langSwitcherStyles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Home</title>
+  <link rel="icon" href="assets/coding.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Cutive&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/indexStyles.css">
+  <link rel="stylesheet" href="css/langSwitcherStyles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aldrich&family=Cutive&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 </head>
+
 <body>
 
-    <div class="hero-section">    
-        <div class="language_header">
-            <div class="language-switcher">
-                🌐
-                <button id="selected-language">
-                    <img src="assets/en.avif" alt="English"> English
-                </button>
-                <ul id="language-dropdown" class="hidden">
-                    <a style="text-decoration: none; color: black;" href="index.html"><li data-lang="en"><img src="assets/en.avif" alt="English"> English</li></a>
-                    <a style="text-decoration: none; color: black;" href="index-de.html"><li data-lang="de"><img src="assets/de.avif" alt="Deutsch"> Deutsch</li></a>
-                    <a style="text-decoration: none; color: black;" href="index-ru.html"><li data-lang="ru"><img src="assets/ru.png" alt="Русский"> Русский</li></a>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="top-section">
-            <h1 class="headline"><span style="color: rgba(7, 208, 208, 0.8);">Hello</span> there!</h1>
-            <p>I'm a <span style="color: rgb(47, 255, 0);">Web</span> developer and I write <span style="text-decoration: line-through;">good and clean</span> code.</p>
-            <br>
-            <br>
-            <div class="social-links-section">
-                <a href="https://github.com/IssueCy"><img class="link-icons" src="assets/github.svg" alt="github"></a>
-                <img id="copyLabel" class="link-icons" src="assets/discord.svg" alt="discord">
-                <a href="https://www.instagram.com/kol.ja09/"><img class="link-icons" src="assets/instagram.svg" alt="insta"></a>
-            </div>
-            <br>
-            <br>
-            <a style="text-decoration: none;" href="products.html"><button id="bottone1">See projects</button></a>
-            <br>
-        </div>
+  <div class="hero-section">
+    <div class="language_header">
+      <div class="language-switcher">
+        🌐
+        <button id="selected-language">
+          <img src="assets/en.avif" alt="English"> English
+        </button>
+        <ul id="language-dropdown" class="hidden">
+          <a style="text-decoration: none; color: black;" href="index.html">
+            <li data-lang="en"><img src="assets/en.avif" alt="English"> English</li>
+          </a>
+          <a style="text-decoration: none; color: black;" href="index-de.html">
+            <li data-lang="de"><img src="assets/de.avif" alt="Deutsch"> Deutsch</li>
+          </a>
+          <a style="text-decoration: none; color: black;" href="index-ru.html">
+            <li data-lang="ru"><img src="assets/ru.png" alt="Русский"> Русский</li>
+          </a>
+        </ul>
+      </div>
     </div>
 
-    <div class="about-section">
-        <img id="gif" src="assets/Coding workshop.gif" alt="gif" class="tech-illustration">
-        <div class="right-text-section">
-            I started learning <span style="color: yellow;">JavaScript</span> in early 2024 and since then, created a <a href="#" style="text-decoration: underline; color: rgba(87, 137, 255, 0.896);">list of projects</a> I'm keen on presenting to <span style="font-weight: bold;">you</span>. Besides that, I'm currently learning <span style="color: rgb(0, 234, 255);">React</span> and <span style="color: orange;">Java</span>.<br><br>
-            Feel free to look around this <span style="background-color: rgba(0, 255, 255, 0.281);">portfolio</span>,  
-            I will try to update it from<span style="font-style: italic;"> time to time</span>.
-            Contact me if you want to <span style="text-decoration: underline;">collaborate</span> or <span style="text-decoration: underline;">share</span> your thoughts about this or other projects of mine. <br>
-        </div>
-    </div>
-
-    <div id="techstackSection" class="techstackSection">
-        <br>
-          <h1>MY <label >TechStack</label></h1>
-      <div class="logos">
-          <div class="logos-slide">
-              <img src="assets/html.webp" alt="html">
-              <img src="assets/css-3.svg" alt="css">
-              <img src="assets/Bootstrap_logo.svg.png" alt="bootstrap">
-              <img src="assets/javascript-1.svg" alt="js">
-              <img src="assets/nodejs.svg" alt="nodejs">
-              <img src="assets/postgresql_original_wordmark_logo_icon_146392.png" alt="postgreSQL">
-              <img src="assets/firebase.png" alt="firebase">
-              <img src="assets/React-icon.svg.png" alt="react">
-              <img src="assets/Electron.svg" alt="electron">
-              <img src="assets/Git_icon.svg.png" alt="git">
-          </div>
-          <div class="logos-slide">
-            <img src="assets/html.webp" alt="html">
-            <img src="assets/css-3.svg" alt="css">
-            <img src="assets/Bootstrap_logo.svg.png" alt="bootstrap">
-            <img src="assets/javascript-1.svg" alt="js">
-            <img src="assets/nodejs.svg" alt="nodejs">
-            <img src="assets/postgresql_original_wordmark_logo_icon_146392.png" alt="postgreSQL">
-            <img src="assets/firebase.png" alt="firebase">
-            <img src="assets/React-icon.svg.png" alt="react">
-            <img src="assets/Electron.svg" alt="electron">
-            <img src="assets/Git_icon.svg.png" alt="git">
-        </div>
-        <div class="logos-slide">
-            <img src="assets/html.webp" alt="html">
-            <img src="assets/css-3.svg" alt="css">
-            <img src="assets/Bootstrap_logo.svg.png" alt="bootstrap">
-            <img src="assets/javascript-1.svg" alt="js">
-            <img src="assets/nodejs.svg" alt="nodejs">
-            <img src="assets/postgresql_original_wordmark_logo_icon_146392.png" alt="postgreSQL">
-            <img src="assets/firebase.png" alt="firebase">
-            <img src="assets/React-icon.svg.png" alt="react">
-            <img src="assets/Electron.svg" alt="electron">
-            <img src="assets/Git_icon.svg.png" alt="git">
+    <div class="top-section">
+      <div class="typewriter">
+        <div>
+          <h1 class="headline"><span style="color: rgba(7, 208, 208, 0.8);">Hello</span> there!</h1>
         </div>
       </div>
+      <p>I'm a <span style="color: rgb(47, 255, 0);">Web</span> developer, I play the <span style="color: rgb(47, 255, 0);">piano</span> and the <span style="color: rgb(47, 255, 0);">guitar</span> and I <span style="color: rgb(47, 255, 0);">compose</span> classical pieces!</p>
+      <br>
+      <br>
+      <div class="social-links-section">
+        <a href="https://github.com/IssueCy"><img class="link-icons" src="assets/github.svg" alt="github"></a>
+        <img id="copyLabel" class="link-icons" src="assets/discord.svg" alt="discord">
+        <a href="https://www.instagram.com/kol.ja09/"><img class="link-icons" src="assets/instagram.svg"
+            alt="insta"></a>
+      </div>
+      <br>
+      <br>
+      <a style="text-decoration: none;" href="products.html"><button id="bottone1">See coding projects</button></a>
+      <br>
+      <a style="text-decoration: none;" href="#"><button id="bottone1">Check out my music</button></a>
+      <br>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <img id="gif" src="assets/Coding workshop.gif" alt="gif" class="tech-illustration">
+    <div class="right-text-section">
+      I started learning <span style="color: yellow;">JavaScript</span> in early 2024 and since then, created a <a
+        href="#" style="text-decoration: underline; color: rgba(87, 137, 255, 0.896);">list of projects</a> I'm keen on
+      presenting to <span style="font-weight: bold;">you</span>. Besides that, I'm currently learning <span
+        style="color: rgb(0, 234, 255);">React</span> and <span style="color: orange;">Java</span>.<br><br>
+      Feel free to look around this <span style="background-color: rgba(0, 255, 255, 0.281);">portfolio</span>,
+      I will try to update it from<span style="font-style: italic;"> time to time</span>.
+      Contact me if you want to <span style="text-decoration: underline;">collaborate</span> or <span
+        style="text-decoration: underline;">share</span> your thoughts about this or other projects of mine. <br>
+    </div>
+  </div>
+
+  <div id="techstackSection" class="techstackSection">
+    <br>
+    <h1>MY <label>TechStack</label></h1>
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="assets/html.webp" alt="html">
+        <img src="assets/css-3.svg" alt="css">
+        <img src="assets/Bootstrap_logo.svg.png" alt="bootstrap">
+        <img src="assets/javascript-1.svg" alt="js">
+        <img src="assets/nodejs.svg" alt="nodejs">
+        <img src="assets/firebase.png" alt="firebase">
+        <img src="assets/React-icon.svg.png" alt="react">
+        <img src="assets/Electron.svg" alt="electron">
+        <img src="assets/Git_icon.svg.png" alt="git">
+        <img src="assets/Cloudflare_Logo.svg.png" alt="Cloudflare_Logo">
+      </div>
+      <div class="logos-slide">
+        <img src="assets/html.webp" alt="html">
+        <img src="assets/css-3.svg" alt="css">
+        <img src="assets/Bootstrap_logo.svg.png" alt="bootstrap">
+        <img src="assets/javascript-1.svg" alt="js">
+        <img src="assets/nodejs.svg" alt="nodejs">
+        <img src="assets/firebase.png" alt="firebase">
+        <img src="assets/React-icon.svg.png" alt="react">
+        <img src="assets/Electron.svg" alt="electron">
+        <img src="assets/Git_icon.svg.png" alt="git">
+        <img src="assets/Cloudflare_Logo.svg.png" alt="Cloudflare_Logo">
+      </div>
+      <div class="logos-slide">
+        <img src="assets/html.webp" alt="html">
+        <img src="assets/css-3.svg" alt="css">
+        <img src="assets/Bootstrap_logo.svg.png" alt="bootstrap">
+        <img src="assets/javascript-1.svg" alt="js">
+        <img src="assets/nodejs.svg" alt="nodejs">
+        <img src="assets/firebase.png" alt="firebase">
+        <img src="assets/React-icon.svg.png" alt="react">
+        <img src="assets/Electron.svg" alt="electron">
+        <img src="assets/Git_icon.svg.png" alt="git">
+        <img src="assets/Cloudflare_Logo.svg.png" alt="Cloudflare_Logo">
+      </div>
+    </div>
   </div>
 
   <br>
@@ -109,25 +131,29 @@
   <div id="contactSection" class="contactSection container">
     <h2>Contact Me</h2>
     <p class="text-center">
-      You can write me a message right through this form, or you can join the <a href="https://discord.gg/QBpWyfwcc4">Simtec Applications discord server</a>.
+      You can write me a message right through this form, or you can join the <a
+        href="https://discord.gg/QBpWyfwcc4">Simtec Applications discord server</a>.
     </p>
-  
+
     <form id="feedbackForm">
       <div class="mb-3">
         <label class="form-label">Discord Name or Email</label>
-        <input id="username" type="text" class="form-control" id="contactInfo" name="contactInfo" placeholder="Enter your Discord name or Email" maxlength="15" required>
+        <input id="username" type="text" class="form-control" id="contactInfo" name="contactInfo"
+          placeholder="Enter your Discord name or Email" maxlength="15" required>
       </div>
-  
+
       <div class="mb-3">
         <label class="form-label">Subject</label>
-        <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject (max 25 characters)" maxlength="25" required>
+        <input type="text" class="form-control" id="subject" name="subject"
+          placeholder="Enter the subject (max 25 characters)" maxlength="25" required>
       </div>
-  
+
       <div class="mb-3">
         <label class="form-label">Message</label>
-        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message (max 600 characters)" maxlength="600" required></textarea>
+        <textarea class="form-control" id="message" name="message" rows="5"
+          placeholder="Enter your message (max 600 characters)" maxlength="600" required></textarea>
       </div>
-  
+
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <div id="statusMessage" class="mt-3"></div>
@@ -142,7 +168,9 @@
         <!--left column-->
         <div class="col-md-6 d-flex align-items-center">
           <img src="assets/simtec_logo.png" alt="Logo" width="100" height="100" class="me-3">
-          <a href="https://simtecapplications.pages.dev" style="text-decoration: none; color: white;"><h5 id="copyrightDate" class="mb-0"></h5></a>
+          <a href="https://simtecapplications.pages.dev" style="text-decoration: none; color: white;">
+            <h5 id="copyrightDate" class="mb-0"></h5>
+          </a>
         </div>
         <br>
         <br>
@@ -150,7 +178,7 @@
         <br>
         <!--right column-->
         <div class="col-md-6">
-        <a href="links.html" class="text-light link">Links, attributions & privacy</a>
+          <a href="links.html" class="text-light link">Links, attributions & privacy</a>
         </div>
       </div>
     </div>
@@ -159,8 +187,11 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="langSwitcher.js"></script>
-    <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="langSwitcher.js"></script>
+  <script defer src="script.js"></script>
 </body>
+
 </html>
