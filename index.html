@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50" tabindex="0">
 
   <div class="hero-section">
     <div class="language_header">
@@ -47,7 +47,10 @@
           <h1 class="headline"><span style="color: rgba(7, 208, 208, 0.8);">Hello</span> there!</h1>
         </div>
       </div>
-      <p>I'm a <span style="color: rgb(47, 255, 0);">Web</span> developer, I play the <span style="color: rgb(47, 255, 0);">piano</span> and the <span style="color: rgb(47, 255, 0);">guitar</span> and I <span style="color: rgb(47, 255, 0);">compose</span> classical pieces!</p>
+      <p>I'm a <span style="color: rgb(47, 255, 0);">Web</span> developer, I play the <span
+          style="color: rgb(47, 255, 0);">piano</span> and the <span style="color: rgb(47, 255, 0);">guitar</span> and I
+        <span style="color: rgb(47, 255, 0);">compose</span> classical pieces!
+      </p>
       <br>
       <br>
       <div class="social-links-section">
@@ -58,9 +61,13 @@
       </div>
       <br>
       <br>
-      <a style="text-decoration: none;" href="products.html"><button style="background: #E94560;" class="bottone1">💻 See coding projects</button></a>
+      <a style="text-decoration: none;" href="products.html"><button style="background: #E94560;" class="bottone1">💻
+          See coding projects</button></a>
       <br>
-      <a style="text-decoration: none;" href="#"><button style="background: rgba(55, 140, 236, 0.89); color: white;" class="bottone1">🎹 Check out my music</button></a>
+      <button style="background: rgba(55, 140, 236, 0.89); color: white;" class="bottone1" onclick="window.scrollTo({ 
+        top: document.getElementById('musicSection').offsetTop - 100, 
+        behavior: 'smooth' 
+      });">🎹 Check out my music</button>
       <br>
     </div>
   </div>
@@ -69,7 +76,8 @@
     <img id="gif" src="assets/Coding workshop.gif" alt="gif" class="tech-illustration">
     <div class="right-text-section">
       I started learning <span style="color: yellow;">JavaScript</span> in early 2024 and since then, I created a <a
-        href="products.html" style="text-decoration: underline; color: rgba(87, 137, 255, 0.896);">list of projects</a> I'm keen on
+        href="products.html" style="text-decoration: underline; color: rgba(87, 137, 255, 0.896);">list of projects</a>
+      I'm keen on
       presenting to <span style="font-weight: bold;">you</span>.
       <br><br>
       Feel free to look around this <span style="background-color: rgba(0, 255, 255, 0.281);">portfolio</span>,
@@ -124,6 +132,20 @@
 
   <br>
   <br>
+
+  <div id="musicSection" class="music-section">
+    <h1>My <label>Music</label></h1>
+    <br>
+    <div class="music-card-section">
+      <div id="card1" class="card">
+        <h4>Waltz in B-minor</h4>
+        <span>Op. 2 No. 3</span>
+      </div>
+      <div class="card">
+
+      </div>
+    </div>
+  </div>
 
   <div id="contactSection" class="contactSection container">
     <h2>Contact Me</h2>

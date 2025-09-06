@@ -145,6 +145,51 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.music-section {
+    margin: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.music-section h1 label {
+    font-size: 3rem;
+    background: #2b89e2;
+    background: linear-gradient(to right, #18beff 0%, #3e5bdf 88%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    margin: 12px;
+    padding: 6px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px #bebebe69, -15px -15px 30px #ffffff3d;
+}
+
+#card1 {
+    background-image: url("/assets/piano.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+/* -               -*/
+
 @keyframes slide {
     from {
         transform: translateX(0);
@@ -318,29 +363,28 @@ form button {
 .typewriter {
     display: flex;
     justify-content: center;
-  }
-  
-  .typewriter h1 {
+}
+
+.typewriter h1 {
     margin-inline: auto;
     overflow: hidden;
     white-space: nowrap;
     border-right: 1px solid;
     animation: typing 2.8s steps(22) forwards, blink 1s step-end infinite;
-  }
-  
-  @keyframes typing {
+}
+
+@keyframes typing {
     from {
-      width: 0;
+        width: 0;
     }
-  
+
     to {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  @keyframes blink {
+}
+
+@keyframes blink {
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
-  }
-  
+}
