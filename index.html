@@ -50,6 +50,8 @@
       <p>I'm a <span style="color: rgb(47, 255, 0);">Web</span> developer, I play the <span
           style="color: rgb(47, 255, 0);">piano</span> and the <span style="color: rgb(47, 255, 0);">guitar</span> and I
         <span style="color: rgb(47, 255, 0);">compose</span> classical pieces!
+        <br>
+        Also, I'm a competitive <span style="color: rgb(47, 255, 0);">swimmer</span>.
       </p>
       <br>
       <br>
@@ -75,15 +77,19 @@
   <div class="about-section">
     <img id="gif" src="assets/Coding workshop.gif" alt="gif" class="tech-illustration">
     <div class="right-text-section">
-      I started learning <span style="color: yellow;">JavaScript</span> in early 2024 and since then, I created a <a
+      I started learning <span style="color: yellow;">JavaScript</span> in early 2024 and since then, created a <a
         href="products.html" style="text-decoration: underline; color: rgba(87, 137, 255, 0.896);">list of projects</a>
       I'm keen on
       presenting to <span style="font-weight: bold;">you</span>.
       <br><br>
       Feel free to look around this <span style="background-color: rgba(0, 255, 255, 0.281);">portfolio</span>,
       I will try to update it from<span style="font-style: italic;"> time to time</span>.
-      Contact me if you want to <span style="text-decoration: underline;">collaborate</span> or <span
-        style="text-decoration: underline;">share</span> your thoughts about this or other projects of mine. <br>
+      <a style="color: aqua;" href="#" onclick="window.scrollTo({ 
+        top: document.getElementById('contactSection').offsetTop - 100, 
+        behavior: 'smooth' 
+      });">Contact ⇓</a> me if you want to <span style="text-decoration: underline;">share</span> your thoughts,
+      especially about my music or about other
+      projects of mine. <br>
     </div>
   </div>
 
@@ -137,12 +143,41 @@
     <h1>My <label>Music</label></h1>
     <br>
     <div class="music-card-section">
-      <div id="card1" class="card">
-        <h4>Waltz in B-minor</h4>
-        <span>Op. 2 No. 3</span>
+      <div id="card1" class="ui-card">
+        <h4>Nocturne in B-minor</h4>
+        <span>Op. 3 No. 1</span>
+        <br><br>
+        <span>Personal Ranking:</span>
+        <p>⭐⭐⭐⭐</p>
+        <a class="music-link" href="#">Get sheet music</a>
+        <a class="music-link" href="#">Listen to it</a>
       </div>
-      <div class="card">
-
+      <div id="card2" class="ui-card">
+        <h4>Invention No. 2 in D-minor</h4>
+        <span>Op. 2 No. 2</span>
+        <br><br>
+        <span>Personal Ranking:</span>
+        <p>⭐⭐⭐</p>
+        <a class="music-link" href="#">Get sheet music</a>
+        <a class="music-link" href="#">Listen to it</a>
+      </div>
+      <div id="card3" class="ui-card">
+        <h4>Concerto in D-minor</h4>
+        <span>Op. 2 No. 3</span>
+        <br><br>
+        <span>Personal Ranking:</span>
+        <p>⭐⭐</p>
+        <a download class="music-link" href="assets/Concerto in D-minor Op. 4 No. 1.pdf">Get sheet music</a>
+        <a class="music-link" href="#">Listen to it</a>
+      </div>
+      <div id="card4" class="ui-card">
+        <h4>Minimal Music in G-minor</h4>
+        <span>Op. 2 No. 1</span>
+        <br><br>
+        <span>Personal Ranking:</span>
+        <p>⭐⭐</p>
+        <a download class="music-link" href="assets/MinimalMusic.pdf">Get sheet music</a>
+        <a class="music-link" href="#">Listen to it</a>
       </div>
     </div>
   </div>

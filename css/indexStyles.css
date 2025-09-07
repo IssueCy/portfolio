@@ -170,23 +170,49 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.card {
-    width: 190px;
+.ui-card {
+    width: 200px;
     height: 254px;
     margin: 12px;
     padding: 6px;
+    padding-top: 12px;
     border-radius: 30px;
     box-shadow: 15px 15px 30px #bebebe69, -15px -15px 30px #ffffff3d;
+    color: whitesmoke;
+    border: 5px solid #ffffff;
 }
 
-#card1 {
+.music-card-section {
     background-image: url("/assets/piano.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 32px;
 }
 
+#card1 {
+    background-color: #1c2a3a;
+} 
+
+#card2 {
+    background-color: #283a4e;
+}
+
+#card3 {
+    background-color: #354b64;
+}
+
+#card4 {
+    background-color: #435c79;
+}
+
+.music-link {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
 
 /* -               -*/
 
