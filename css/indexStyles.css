@@ -120,10 +120,12 @@ body {
 .about-section {
     display: flex;
     align-items: center;
+
 }
 
 .right-text-section {
     margin: 16px;
+    max-width: 1000px;
 }
 
 .tech-illustration {
