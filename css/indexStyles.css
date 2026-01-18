@@ -173,10 +173,11 @@ body {
 }
 
 .ui-card {
+    display: flex;
+    flex-direction: column;
     width: 200px;
-    height: 254px;
     margin: 12px;
-    padding: 6px;
+    padding: 12px;
     padding-top: 12px;
     border-radius: 30px;
     box-shadow: 15px 15px 30px #bebebe69, -15px -15px 30px #ffffff3d;
@@ -216,6 +217,21 @@ body {
     cursor: pointer;
 }
 
+.play-btn {
+    margin-top: 6px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #3f98d3;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.play-btn:hover {
+    background: #3f98d39a;
+}
 /* -               -*/
 
 @keyframes slide {

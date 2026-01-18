@@ -73,3 +73,47 @@ if (feedbackForm) {
       });
   });
 }
+
+//! play piece button
+const audio = document.getElementById("audioPlayer");
+
+let currentTrack = null;
+let currentButton = null;
+
+document.querySelectorAll(".play-btn").forEach(button => {
+    button.addEventListener("click", () => {
+        const track = button.dataset.audio;
+
+        if (currentTrack === track) {
+            if (audio.paused) {
+                audio.play();
+                button.textContent = "⏸ Pause";
+            } else {
+                audio.pause();
+                button.textContent = "▶ Listen";
+            }
+            return;
+        }
+
+        if (currentButton) {
+            currentButton.textContent = "▶ Listen";
+        }
+
+        currentTrack = track;
+        currentButton = button;
+
+        audio.src = track;
+        audio.type = "audio/mpeg";
+        audio.play();
+
+        button.textContent = "⏸ Pause";
+    });
+});
+
+audio.addEventListener("ended", () => {
+    if (currentButton) {
+        currentButton.textContent = "▶ Listen";
+    }
+    currentTrack = null;
+    currentButton = null;
+});
